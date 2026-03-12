@@ -1,65 +1,98 @@
 <h1 align="center">⚽ AI Football Match Outcome Predictor</h1>
 
 <p align="center">
-Machine Learning system that predicts football match outcomes using real-time data from APIs.
+Machine Learning system that predicts football match outcomes using real-time data.
 </p>
 
 <p align="center">
-Built using Python, Machine Learning, and Football Analytics.
+
+<img src="https://img.shields.io/badge/Python-3.12-blue">
+<img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange">
+<img src="https://img.shields.io/badge/Data-Pandas-green">
+<img src="https://img.shields.io/badge/Visualization-Matplotlib-red">
+<img src="https://img.shields.io/badge/License-MIT-yellow">
+
 </p>
 
 <hr>
 
-<h2>📌 Project Overview</h2>
+<h2>📌 Overview</h2>
 
 <p>
-This project is an <b>AI-powered football analytics engine</b> that predicts match outcomes automatically.
-It collects football match data from an API, processes historical data, trains a machine learning model,
-and predicts outcomes for upcoming matches.
+AI Football Match Outcome Predictor is a machine learning system that analyzes football match data
+and predicts the likely outcome of matches automatically.
 </p>
 
-<p>The system supports predictions for matches across multiple competitions including:</p>
+<p>
+The system collects data using APIs, processes historical match statistics,
+trains a machine learning model, and predicts results for upcoming matches.
+</p>
+
+Supports multiple competitions including:
 
 <ul>
 <li>Domestic leagues</li>
 <li>Lower divisions</li>
-<li>Continental competitions</li>
 <li>International competitions</li>
+<li>Continental competitions</li>
 </ul>
+
+Examples include competitions like the  
+<strong>Premier League</strong>, <strong>UEFA Champions League</strong>, and many others.
+</p>
 
 <hr>
 
 <h2>🚀 Features</h2>
 
 <ul>
-<li>Automatic football data collection from API</li>
-<li>Machine learning model using Random Forest</li>
-<li>Real-time match predictions</li>
-<li>Team performance analysis</li>
+<li>Automatic football data collection from APIs</li>
+<li>Machine Learning prediction engine</li>
+<li>Random Forest model for match prediction</li>
+<li>Team performance statistics</li>
 <li>Goal distribution visualization</li>
-<li>Prediction engine for today's matches</li>
+<li>Real-time prediction for today's matches</li>
+<li>Interactive dashboard</li>
 </ul>
 
 <hr>
 
-<h2>⚙️ Tech Stack</h2>
+<h2>🧠 Machine Learning Pipeline</h2>
 
-<ul>
-<li>Python</li>
-<li>Pandas</li>
-<li>Scikit-learn</li>
-<li>Matplotlib</li>
-<li>REST APIs</li>
-</ul>
+<pre>
+
+Football API
+     │
+     ▼
+Data Collection
+     │
+     ▼
+Dataset Builder
+     │
+     ▼
+Feature Engineering
+     │
+     ▼
+Random Forest Model
+     │
+     ▼
+Match Prediction
+     │
+     ▼
+Visualization Dashboard
+
+</pre>
 
 <hr>
 
 <h2>📂 Project Structure</h2>
 
 <pre>
+
 AI-Football-Match-Outcome-Predictor
 │
 ├── main.py
+├── dashboard.py
 │
 ├── data
 │   └── matches.csv
@@ -75,82 +108,68 @@ AI-Football-Match-Outcome-Predictor
 │   ├── feature_builder.py
 │   └── match_predictor.py
 │
+├── requirements.txt
 ├── README.md
 └── LICENSE
+
 </pre>
 
 <hr>
 
-<h2>📊 Machine Learning Pipeline</h2>
+<h2>⚙️ Installation</h2>
 
 <pre>
-Football API
-      ↓
-Data Collection
-      ↓
-Dataset Builder
-      ↓
-Feature Engineering
-      ↓
-Random Forest Model
-      ↓
-Match Prediction
-      ↓
-Visualization
-</pre>
 
-<hr>
-
-<h2>📈 Example Prediction</h2>
-
-<pre>
-Arsenal vs Chelsea → Home Win
-Barcelona vs Sevilla → Home Win
-Juventus vs Milan → Draw
-</pre>
-
-<hr>
-
-<h2>🔧 Installation</h2>
-
-<pre>
 git clone https://github.com/berasankhadeep20-lang/AI-Football-Match-Outcome-Predictor.git
 
 cd AI-Football-Match-Outcome-Predictor
 
 pip install -r requirements.txt
+
 </pre>
 
 <hr>
 
-<h2>▶️ Run the Project</h2>
+<h2>▶️ Run Prediction Engine</h2>
 
 <pre>
+
 python main.py
+
 </pre>
 
 <hr>
 
-<h2>📊 Future Improvements</h2>
+<h2>📊 Launch Interactive Dashboard</h2>
+
+<pre>
+
+streamlit run dashboard.py
+
+</pre>
+
+This will open a **live football prediction dashboard** in your browser.
+
+<hr>
+
+<h2>📈 Future Improvements</h2>
 
 <ul>
-<li>ELO rating system for teams</li>
-<li>Expected Goals (xG) modelling</li>
-<li>Poisson goal prediction</li>
-<li>Live dashboard using Streamlit</li>
+<li>ELO rating system</li>
+<li>Expected Goals (xG)</li>
 <li>Deep learning models</li>
+<li>Live match predictions</li>
+<li>Betting analytics</li>
 </ul>
 
 <hr>
 
 <h2>📜 License</h2>
 
-<p>
-This project is licensed under the MIT License.
-</p>
+MIT License
 
 <hr>
 
 <p align="center">
-Made with ❤️ for football analytics and machine learning.
+Made with ❤️ by Sankhadeep Bera
 </p>
